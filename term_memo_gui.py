@@ -1,18 +1,25 @@
 # coding: utf-8
+import os
 import tkinter as tk
 from tkinter import ttk, messagebox
 
 import psycopg
+from dotenv import load_dotenv
+
+# =====================================
+# .env 読み込み
+# =====================================
+load_dotenv()
 
 
 # =====================================
 # PostgreSQL 接続設定
 # =====================================
 DB_CONFIG = {
-    "host": "localhost",
-    "dbname": "sql_study",
-    "user": "postgres",
-    "password": "postgres",
+    "host": os.getenv("DB_HOST"),
+    "dbname": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
 }
 
 
