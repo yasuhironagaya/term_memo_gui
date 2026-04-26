@@ -1,0 +1,20 @@
+# すべて無視
+*
+
+# Git管理用
+!.gitignore
+!README.md
+
+# Pythonソース
+!term_memo_gui.py
+
+# 必要なら画像や設定ファイル
+!*.md
+!*.txt
+
+# データ類は管理しない
+data/
+export/
+backup/
+__pycache__/
+*.pyc
