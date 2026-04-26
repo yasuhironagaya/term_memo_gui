@@ -12,7 +12,7 @@ DB_CONFIG = {
     "host": "localhost",
     "dbname": "sql_study",
     "user": "postgres",
-    "password": "3695",
+    "password": "postgres",
 }
 
 
